@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated sensorproject -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="sensorproject.presentation.SensorprojectModelWizardID"
+            name="%_UI_SensorprojectModelWizard_label"
+            class="sensorproject.presentation.SensorprojectModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SensorprojectModelFile.gif">
+         <description>%_UI_SensorprojectModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated sensorproject -->
+      <editor
+            id="sensorproject.presentation.SensorprojectEditorID"
+            name="%_UI_SensorprojectEditor_label"
+            icon="icons/full/obj16/SensorprojectModelFile.gif"
+            extensions="sensorproject"
+            class="sensorproject.presentation.SensorprojectEditor"
+            contributorClass="sensorproject.presentation.SensorprojectActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

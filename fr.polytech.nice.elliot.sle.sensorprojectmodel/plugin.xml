@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated sensorproject -->
+      <package
+            uri="http://fr/polytech/nice/elliot/sle/sensorproject"
+            class="sensorproject.SensorprojectPackage"
+            genModel="model/sensorproject.genmodel"/>
+   </extension>
+
+</plugin>

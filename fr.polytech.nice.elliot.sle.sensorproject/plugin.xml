@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.sequential.xdsml">
+    <XDSML_Definition name="fr.polytech.nice.elliot.sle.sensorproject.Sensorproject" xdsmlFilePath="platform:/plugin/fr.polytech.nice.elliot.sle.sensorproject/src/fr/polytech/nice/elliot/sle/sensorproject/Sensorproject.dsl" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" />
+  </extension>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.concurrent.xdsml">
+    <XDSML_Definition name="fr.polytech.nice.elliot.sle.sensorproject.Sensorproject" xdsmlFilePath="/fr.polytech.nice.elliot.sle.sensorproject/bin/fr/polytech/nice/elliot/sle/sensorproject/Sensorproject.dsl" codeExecutor_class="sensorproject.xdsml.api.impl.SensorprojectCodeExecutor" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" solver_class="org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.timesquare.moc.impl.CcslSolver" toCCSLQVTOFilePath="/fr.polytech.nice.elliot.sle.sensorproject.dse/qvto-gen/modeling/xSP.qvto" />
+  </extension>
+</plugin>
